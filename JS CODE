@@ -1,0 +1,15 @@
+/**
+ * @param {string} s
+ * @param {string[]} words
+ * @return {boolean}
+ */
+var isPrefixString = function(s, words) {
+    let newWord = '';
+    for (let word of words) {
+        newWord+=word
+        if (s === newWord) {
+            return true
+        }
+    }
+    return false
+};
